@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% block title %}
+    <h1>Pruebas</h1>
+    <p>Completa los campos para elaborar la prueba</p>
+{% endblock %}
+{% block content %}
+    <form method="post" action="">
+        {% csrf_token %}
+
+        <div class="row">
+            <div class="form-group col-12">
+                <label for="inputText3" class="col-form-label">{{ form.pregunta_uno.label }}</label>
+                {{ form.pregunta_uno }}
+                {{ form.pregunta_uno.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_uno_a.label }}</label>
+                {{ form.respuesta_uno_a }}
+                {{ form.respuesta_uno_a.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_uno_b.label }}</label>
+                {{ form.respuesta_uno_b }}
+                {{ form.respuesta_uno_b.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_uno_c.label }}</label>
+                {{ form.respuesta_uno_c }}
+                {{ form.respuesta_uno_c.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_uno_d.label }}</label>
+                {{ form.respuesta_uno_d }}
+                {{ form.respuesta_uno_d.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_correcta_uno.label }}</label>
+                {{ form.respuesta_correcta_uno }}
+                {{ form.respuesta_correcta_uno.errors }}
+            </div>
+
+
+            <div class="form-group col-12">
+                <label for="inputText3" class="col-form-label">{{ form.pregunta_dos.label }}</label>
+                {{ form.pregunta_dos }}
+                {{ form.pregunta_dos.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_dos_a.label }}</label>
+                {{ form.respuesta_dos_a }}
+                {{ form.respuesta_dos_a.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_dos_b.label }}</label>
+                {{ form.respuesta_dos_b }}
+                {{ form.respuesta_dos_b.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_dos_c.label }}</label>
+                {{ form.respuesta_dos_c }}
+                {{ form.respuesta_dos_c.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_dos_d.label }}</label>
+                {{ form.respuesta_dos_d }}
+                {{ form.respuesta_dos_d.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_correcta_dos.label }}</label>
+                {{ form.respuesta_correcta_dos }}
+                {{ form.respuesta_correcta_dos.errors }}
+            </div>
+
+            <div class="form-group col-12">
+                <label for="inputText3" class="col-form-label">{{ form.pregunta_tres.label }}</label>
+                {{ form.pregunta_tres }}
+                {{ form.pregunta_tres.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_tres_a.label }}</label>
+                {{ form.respuesta_tres_a }}
+                {{ form.respuesta_tres_a.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_tres_b.label }}</label>
+                {{ form.respuesta_tres_b }}
+                {{ form.respuesta_tres_b.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_tres_c.label }}</label>
+                {{ form.respuesta_tres_c }}
+                {{ form.respuesta_tres_c.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_tres_d.label }}</label>
+                {{ form.respuesta_tres_d }}
+                {{ form.respuesta_tres_d.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_correcta_tres.label }}</label>
+                {{ form.respuesta_correcta_tres }}
+                {{ form.respuesta_correcta_tres.errors }}
+            </div>
+            <div class="form-group col-12">
+                <label for="inputText3" class="col-form-label">{{ form.pregunta_cuatro.label }}</label>
+                {{ form.pregunta_cuatro }}
+                {{ form.pregunta_cuatro.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_cuatro_a.label }}</label>
+                {{ form.respuesta_cuatro_a }}
+                {{ form.respuesta_cuatro_a.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_cuatro_b.label }}</label>
+                {{ form.respuesta_cuatro_b }}
+                {{ form.respuesta_cuatro_b.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_cuatro_c.label }}</label>
+                {{ form.respuesta_cuatro_c }}
+                {{ form.respuesta_cuatro_c.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_cuatro_d.label }}</label>
+                {{ form.respuesta_cuatro_d }}
+                {{ form.respuesta_cuatro_d.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3"
+                       class="col-form-label">{{ form.respuesta_correcta_cuatro.label }}</label>
+                {{ form.respuesta_correcta_cuatro }}
+                {{ form.respuesta_correcta_cuatro.errors }}
+            </div>
+            <div class="form-group col-12">
+                <label for="inputText3" class="col-form-label">{{ form.pregunta_cinco.label }}</label>
+                {{ form.pregunta_cinco }}
+                {{ form.pregunta_cinco.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_cinco_a.label }}</label>
+                {{ form.respuesta_cinco_a }}
+                {{ form.respuesta_cinco_a.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_cinco_b.label }}</label>
+                {{ form.respuesta_cinco_b }}
+                {{ form.respuesta_cinco_b.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_cinco_c.label }}</label>
+                {{ form.respuesta_cinco_c }}
+                {{ form.respuesta_cinco_c.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_cinco_d.label }}</label>
+                {{ form.respuesta_cinco_d }}
+                {{ form.respuesta_cinco_d.errors }}
+            </div>
+            <div class="form-group col-12 col-md-6">
+                <label for="inputText3" class="col-form-label">{{ form.respuesta_correcta_cinco.label }}</label>
+                {{ form.respuesta_correcta_cinco }}
+                {{ form.respuesta_correcta_cinco.errors }}
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+    </form>
+
+{% endblock %}

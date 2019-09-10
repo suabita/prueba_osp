@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+    <h1>Pruebas</h1>
+    <p>Selecciona una prueba</p>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        {% for valor in object_list %}
+            <div class="card col-12">
+                <div class="card-body">
+                    <a href="{% url 'prueba:detail' valor.id%}" class="card-link">Prueba{{ valor.id }}</a>
+                    <a href="{% url 'prueba:update' valor.id%}" class="btn btn-danger float-right" role="button">Editar</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+</body>
+</html>

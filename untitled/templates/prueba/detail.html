@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% block title %}
+    <h1>Pruebas</h1>
+    <p>Complete las siguientes preguntas con única respuesta</p>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Pregunta 1</h5>
+                    <h6 class="card-subtitle mb-4 text-muted">{{ object.pregunta_uno }}</h6>
+                    {% if object.respuesta_correcta_uno == 'a' %}
+                        <div class="text-success">{{ object.respuesta_uno_a }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_uno_a }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_uno == 'b' %}
+                        <div class="text-success">{{ object.respuesta_uno_b }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_uno_b }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_uno == 'c' %}
+                        <div class="text-success">{{ object.respuesta_uno_c }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_uno_c }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_uno == 'd' %}
+                        <div class="text-success">{{ object.respuesta_uno_d }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_uno_d }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Pregunta 2</h5>
+                    <h6 class="card-subtitle mb-4 text-muted">{{ object.pregunta_dos }}</h6>
+                    {% if object.respuesta_correcta_dos == 'a' %}
+                        <div class="text-success">{{ object.respuesta_dos_a }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_dos_a }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_dos == 'b' %}
+                        <div class="text-success">{{ object.respuesta_dos_b }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_dos_a }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_dos == 'c' %}
+                        <div class="text-success">{{ object.respuesta_dos_c }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_dos_c }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_dos == 'd' %}
+                        <div class="text-success">{{ object.respuesta_dos_d }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_dos_d }}</div>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Pregunta 3</h5>
+                    <h6 class="card-subtitle mb-4 text-muted">{{ object.pregunta_tres }}</h6>
+                    {% if object.respuesta_correcta_tres == 'a' %}
+                        <div class="text-success">{{ object.respuesta_tres_a }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_tres_a }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_tres == 'b' %}
+                        <div class="text-success">{{ object.respuesta_tres_b }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_tres_b }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_tres == 'c' %}
+                        <div class="text-success">{{ object.respuesta_tres_c }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_tres_c }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_tres == 'd' %}
+                        <div class="text-success">{{ object.respuesta_tres_d }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_tres_d }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Pregunta 4</h5>
+                    <h6 class="card-subtitle mb-4 text-muted">{{ object.pregunta_cuatro }}</h6>
+                    {% if object.respuesta_correcta_cuatro == 'a' %}
+                        <div class="text-success">{{ object.respuesta_cuatro_a }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_cuatro_a }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_cuatro == 'b' %}
+                        <div class="text-success">{{ object.respuesta_cuatro_b }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_cuatro_b }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_cuatro == 'c' %}
+                        <div class="text-success">{{ object.respuesta_cuatro_c }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_cuatro_c }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_cuatro == 'd' %}
+                        <div class="text-success">{{ object.respuesta_cuatro_d }}</div>
+                    {% else %}
+                        <div>{{ object.respuesta_cuatro_d }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Pregunta 5</h5>
+                    <h6 class="card-subtitle mb-4 text-muted">{{ object.pregunta_cinco }}</h6>
+                    {% if object.respuesta_correcta_cinco == 'a' %}
+                        <div class="text-success">{{ object.respuesta_cinco_a }}</div>
+                    {% else %}
+                        <div class="card-text font-bold">{{ object.respuesta_cinco_a }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_cinco == 'b' %}
+                        <p class="card-text font-bold">{{ object.respuesta_cinco_b }}</p>
+                    {% else %}
+                        <div class="card-text font-bold">{{ object.respuesta_cinco_b }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_cinco == 'c' %}
+                        <div class="text-success">{{ object.respuesta_cinco_c }}</div>
+                    {% else %}
+                        <div class="card-text font-bold">{{ object.respuesta_cinco_c }}</div>
+                    {% endif %}
+                    {% if object.respuesta_correcta_cinco == 'd' %}
+                        <div class="text-success">{{ object.respuesta_cinco_d }}</div>
+                    {% else %}
+                        <div class="card-text font-bold">{{ object.respuesta_cinco_d }}</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}
